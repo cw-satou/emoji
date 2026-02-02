@@ -4,7 +4,12 @@ import random
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         # ここに候補の文字を指定
-        candidates = ["A", "B", "C", "D", "E"]
+        candidates = [
+            "🅰️", "🅱️", "🅾️", "⛎", 
+            "♈️", "♉️", "♊️", "♋️", 
+            "♌️", "♍️", "♎️", "♏️", 
+            "♐️", "♑️", "♒️", "♓️"
+        ]
         
         # ランダムに1つ選ぶ
         chosen_char = random.choice(candidates)
